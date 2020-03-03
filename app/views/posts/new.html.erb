@@ -1,0 +1,14 @@
+<h1>Create a New Post!</h1>
+<h3>Post Form</h3>
+
+<%= form_tag posts_path do %>
+
+<p>Enter Title:<%= text_field_tag :'post[title]' %></p>
+
+<p>Enter Description:<%= text_area_tag :'post[description]' %></p>
+
+<%= submit_tag "Submit Post" %>
+
+<% end %>
+
+<%= params.inspect %>
